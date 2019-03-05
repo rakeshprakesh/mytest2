@@ -1,0 +1,29 @@
+Testing
+This is the second file
+This is a branch file 
+
+========================
+
+sudo hostnamectl set-hostname clouderacm
+sudo hostnamectl set-hostname sql
+
+
+10.10.40.226 sql
+
+sudo hostnamectl set-hostname sql
+
+
+10.10.40.62	clouderacm.ap-southeast-1.compute.internal	clouderacm
+10.10.40.204	sql.ap-southeast-1.compute.internal	sql
+10.10.40.206	namenode.ap-southeast-1.compute.internal	namenode
+10.10.40.104	datanode.ap-southeast-1.compute.internal	datanode
+
+
+vi /etc/sysconfig/network
+HOSTNAME=clouderacm.ap-southeast-1.compute.internal
+HOSTNAME=sql.ap-southeast-1.compute.internal
+HOSTNAME=namenode.ap-southeast-1.compute.internal
+HOSTNAME=datanode.ap-southeast-1.compute.internal
+
+
+https://archive.cloudera.com/cm6/6.0.0/redhat7/yum/cloudera-manager.repo
